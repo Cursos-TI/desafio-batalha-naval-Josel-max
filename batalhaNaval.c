@@ -5,16 +5,16 @@ int main() {
     int tabuleiro[10][10] = {
         {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
         {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-        {0, 0, 0, 0, 1, 1, 1, 0, 0, 0}, // Navio 2 (Horizontal)
-        {1, 0, 0, 0, 0, 0, 0, 0, 0, 0}, // Navio 1 (Vertical)
-        {1, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-        {1, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+        {0, 0, 0, 0, 3, 3, 3, 0, 0, 0}, // Navio 2 (Horizontal)
+        {3, 0, 0, 0, 0, 0, 0, 0, 0, 0}, // Navio 1 (Vertical)
+        {3, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+        {3, 0, 0, 0, 0, 0, 0, 0, 0, 0},
         {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-        {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-        {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-        {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+        {3, 0, 0, 0, 0, 0, 0, 0, 0, 3}, // Navio 3 (Diagonal 1)
+        {0, 3, 0, 0, 0, 0, 0, 0, 3, 0}, // Navio 4 (Diagonal 2)
+        {0, 0, 3, 0, 0, 0, 0, 3, 0, 0}
     };
-
+    // Criando tabileiro 10x10
     printf("  ");
     for (int n =1; n <= 10; n++) {
         printf("%d ",n);
@@ -23,7 +23,7 @@ int main() {
     printf("\n");
 
      char linha[10] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
-    // Criando tabileiro 10x10
+    
     for (int i = 0; i < 10; i++) {
         printf("%c ", linha[i]);
         for (int j = 0; j < 10; j++) {
@@ -42,17 +42,17 @@ int main() {
     
     printf("O Navio 2 esta na Linha C, entre as colunas 5 e 7.\n");
 
+    printf("\nCordenada do navio 3:\n");
+
+    printf("O Navio 3 está nas linhas H,I e J, Entre as Colunas 1, 2 e 3.\n");
+
+    printf("\nCordenadas do navio 4:\n");
+
+    printf("O Navio 4 está nas linhas H, I e J, Entre as Colunas 8, 9 e 10.\n");
+
     return 0;
 }
-    // Nível Novato - Posicionamento dos Navios
-    // Sugestão: Declare uma matriz bidimensional para representar o tabuleiro (Ex: int tabuleiro[5][5];).
-    // Sugestão: Posicione dois navios no tabuleiro, um verticalmente e outro horizontalmente.
-    // Sugestão: Utilize `printf` para exibir as coordenadas de cada parte dos navios.
-
-    // Nível Aventureiro - Expansão do Tabuleiro e Posicionamento Diagonal
-    // Sugestão: Expanda o tabuleiro para uma matriz 10x10.
-    // Sugestão: Posicione quatro navios no tabuleiro, incluindo dois na diagonal.
-    // Sugestão: Exiba o tabuleiro completo no console, mostrando 0 para posições vazias e 3 para posições ocupadas.
+    
 
     // Nível Mestre - Habilidades Especiais com Matrizes
     // Sugestão: Crie matrizes para representar habilidades especiais como cone, cruz, e octaedro.
